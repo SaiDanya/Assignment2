@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         if (!isNaN(subtotal) && !isNaN(tipPercentage)) {
             const totalAmount = calculateTotalAmount(subtotal, tipPercentage);
-            totalOutput.textContent = `Total Amount (including tip): $${totalAmount.toFixed(2)}`;
+            totalOutput.textContent = `Total Amount: $${totalAmount.toFixed(2)}`;
         } else {
             totalOutput.textContent = "Invalid input. Please enter numbers.";
         }
